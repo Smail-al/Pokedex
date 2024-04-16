@@ -1,4 +1,8 @@
 
+:root{
+  display: flex;
+  justify-content: center;
+}
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -25,7 +29,7 @@
   font-size: 2rem;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   color: goldenrod;
-  
 }
+
 
 
