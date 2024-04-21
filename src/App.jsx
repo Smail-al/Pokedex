@@ -2,7 +2,7 @@ import './App.css'
 import { useState } from 'react';
 import PokemonCard from './components/PokemonCard'
 import NavBar from './components/NavBar';
-
+import { useEffect } from 'react';
 
 function App (){
   const [pokemonIndex, setPokemonIndex] = useState(0);
@@ -30,7 +30,12 @@ function App (){
   {
       name: "mew",
     },
-  ]
+  ];
+
+  useEffect(() => {
+    alert("Hello pokemon trainer :)")
+  },
+  []);
 
   const handlePreviousClick = () =>{
     setPokemonIndex(prevIndex => prevIndex -1);
