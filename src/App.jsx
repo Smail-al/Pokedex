@@ -32,7 +32,7 @@ function App (){
     },
   ]
 
-  const handlPreviousClick = () =>{
+  const handlePreviousClick = () =>{
     setPokemonIndex(prevIndex => prevIndex -1);
   };
 
@@ -45,13 +45,15 @@ function App (){
     <PokemonCard pokemon ={pokemonList[pokemonIndex]}
     />
    <NavBar
-   previousClick={handlPreviousClick}
+   previousClick={handlePreviousClick}
    nextClick={handleNextClick}
    pokemonIndex={pokemonIndex}
    pokemonList={pokemonList}
+   setPokemonIndex={setPokemonIndex}
    />
    </div>
-     
   );
   };
+
+
 export default App
